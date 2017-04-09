@@ -4,6 +4,7 @@ Program: when2gram.py
 Date   : April 8th, 2017
 """
 
+
 import argparse
 import imageio
 from datetime import datetime
@@ -40,18 +41,13 @@ def get_credentials(file_name):
 	instagram = InstagramAPI(user, pswd)
 	return instagram
 
-"""
-Needed:
-		[like_count]
-		[created_at_utc]
-"""
+
 def get_feed(instagram):
 	# Local variables
 	feed = instagram.getTotalSelfUserFeed()
 	time_likes = {}
 	time_posts = {}
 	avg_time   = {}
-
 
 	# ******** start get_feed() ********#
 	
