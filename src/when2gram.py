@@ -5,6 +5,7 @@ Date   : April 8th, 2017
 """
 
 import argparse
+import imageio
 from datetime import datetime
 from InstagramAPI import InstagramAPI
 
@@ -92,7 +93,8 @@ def get_feed(instagram):
 	print("-----------------")
 	print("1. " + str(avg_time[avgs[0]]) + ":00, you average " + str(round(avgs[0])) + " likes.")
 	print("2. " + str(avg_time[avgs[1]]) + ":00, you average " + str(round(avgs[1])) + " likes.")
-	print("3. " + str(avg_time[avgs[2]]) + ":00, you average " + str(round(avgs[2])) + " likes.")	
+	print("3. " + str(avg_time[avgs[2]]) + ":00, you average " + str(round(avgs[2])) + " likes.")
+	print("-----------------\n")
 
 
 def main():
@@ -108,4 +110,5 @@ def main():
 
 
 if __name__ == "__main__":
+	imageio.plugins.ffmpeg.download()
     main()
