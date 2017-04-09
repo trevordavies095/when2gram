@@ -10,4 +10,4 @@
 3. Add your instagram credentials to creds.txt
 4. Run `python3 when2gram.py creds.txt`
 
-![picture alt](http://i.imgur.com/L7qEXnp.png)
+![picture alt](http://i.imgur.com/yz7R5Em.png)
