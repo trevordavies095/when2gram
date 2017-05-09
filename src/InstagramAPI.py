@@ -1,4 +1,13 @@
-﻿#!/usr/bin/env python
+﻿"""
+Name       : L Trevor Davies, LevPasha
+Program    : InstagramAPI
+Date       : May 9th, 2017
+Description: And edited version of LevPasha's InstagramAPI. This version
+             can be used for data analysis, aka removed posting, liking etc              abilities.
+"""
+
+
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import requests
@@ -22,7 +31,6 @@ if sys.version_info.major == 3:
 
 from ImageUtils import getImageSize
 from requests_toolbelt import MultipartEncoder
-from moviepy.editor import VideoFileClip
 
 class InstagramAPI:
     API_URL = 'https://i.instagram.com/api/v1/'
