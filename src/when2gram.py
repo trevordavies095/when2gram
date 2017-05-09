@@ -87,9 +87,8 @@ def get_feed(instagram):
 
 	print("Results")
 	print("-----------------")
-	print("1. " + str(avg_time[avgs[0]]) + ":00, you average " + str(round(avgs[0])) + " likes.")
-	print("2. " + str(avg_time[avgs[1]]) + ":00, you average " + str(round(avgs[1])) + " likes.")
-	print("3. " + str(avg_time[avgs[2]]) + ":00, you average " + str(round(avgs[2])) + " likes.")
+	for i in range(0, len(avgs)):
+		print(str(i + 1) + ". " + str(avg_time[avgs[i]]) + ":00, you average " + str(round(avgs[i])) + " likes.")
 	print("-----------------\n")
 
 
@@ -103,6 +102,8 @@ def main():
 	instagram.login()
 
 	get_feed(instagram)
+
+	instagram.logout()
 
 
 if __name__ == "__main__":
